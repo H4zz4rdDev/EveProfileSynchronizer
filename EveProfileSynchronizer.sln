@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EveProfileSynchronizer", "EveProfileSynchronizer\EveProfileSynchronizer.csproj", "{7E6AF534-93E9-47A6-A974-08E3D6EFAF9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E6AF534-93E9-47A6-A974-08E3D6EFAF9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E6AF534-93E9-47A6-A974-08E3D6EFAF9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E6AF534-93E9-47A6-A974-08E3D6EFAF9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E6AF534-93E9-47A6-A974-08E3D6EFAF9F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8CD5EF1-B3FA-4BC6-9489-17B5EFCF957C}
+	EndGlobalSection
+EndGlobal
