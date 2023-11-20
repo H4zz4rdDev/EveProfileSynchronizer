@@ -32,6 +32,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -49,7 +58,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\AppConfiguration.cs" />
+    <Compile Include="Core\BackupHandler.cs" />
+    <Compile Include="Core\CacheHandler.cs" />
     <Compile Include="Core\EsiDataProvider.cs" />
+    <Compile Include="Core\EveProfileHandler.cs" />
+    <Compile Include="Core\Exception\AppOptionFileNotFoundException.cs" />
+    <Compile Include="Core\Exception\AppOptionMissingIdException.cs" />
+    <Compile Include="Core\Model\EveCacheObject.cs" />
+    <Compile Include="Core\Model\EveCharacter.cs" />
+    <Compile Include="Core\Model\EveEsiCharacterResult.cs" />
+    <Compile Include="Core\Model\EveEsiResult.cs" />
+    <Compile Include="Core\AppUtils.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +91,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
