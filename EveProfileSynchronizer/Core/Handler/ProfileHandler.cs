@@ -8,15 +8,6 @@ namespace EveProfileSynchronizer.Core.Handler
 {
     internal class ProfileHandler
     {
-        private readonly List<string> _fileBlackList = new List<string>();
-
-        public ProfileHandler()
-        {
-            _fileBlackList.Add("core_char_('char', None, 'dat').dat");
-            _fileBlackList.Add("core_char__.da");
-            _fileBlackList.Add("core_user__.da");
-        }
-
         public void DoProfileSync(EveCharacter mainCharacter, List<EveCharacter> syncCharacters)
         {
             var mainCharacterProfileFilename = $"\\core_char_{mainCharacter.Id}.dat";
@@ -44,7 +35,7 @@ namespace EveProfileSynchronizer.Core.Handler
 
             foreach (var file in profileDirectory.GetFiles())
             {
-                if (!_fileBlackList.Any(file.Name.Contains) && Path.GetExtension(file.FullName) == ".dat")
+                if (!AppConfiguration.fileBlacklist.Any(file.Name.Contains) && Path.GetExtension(file.FullName) == ".dat")
                 {
                     if (file.Name.Contains("core_char"))
                     {
