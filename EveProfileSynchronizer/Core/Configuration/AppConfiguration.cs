@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace EveProfileSynchronizer.Core
+namespace EveProfileSynchronizer.Core.Configuration
 {
     public static class AppConfiguration
     {

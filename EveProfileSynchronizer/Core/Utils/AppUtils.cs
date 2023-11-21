@@ -1,9 +1,8 @@
-﻿using Newtonsoft.Json;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Linq;
+using Newtonsoft.Json;
 
-
-namespace EveProfileSynchronizer.Core
+namespace EveProfileSynchronizer.Core.Utils
 {
     internal class AppUtils
     {

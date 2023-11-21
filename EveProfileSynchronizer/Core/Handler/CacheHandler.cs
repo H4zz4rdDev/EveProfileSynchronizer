@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Net;
+using EveProfileSynchronizer.Core.Configuration;
 using EveProfileSynchronizer.Core.Exception;
 using EveProfileSynchronizer.Core.Model;
+using EveProfileSynchronizer.Core.Utils;
 using Newtonsoft.Json;
 
-namespace EveProfileSynchronizer.Core
+namespace EveProfileSynchronizer.Core.Handler
 {
     internal class CacheHandler
     {

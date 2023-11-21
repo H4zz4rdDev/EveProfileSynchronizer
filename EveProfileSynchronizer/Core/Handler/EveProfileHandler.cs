@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using EveProfileSynchronizer.Core.Configuration;
 using EveProfileSynchronizer.Core.Model;
 
-namespace EveProfileSynchronizer.Core
+namespace EveProfileSynchronizer.Core.Handler
 {
     internal class EveProfileHandler
     {

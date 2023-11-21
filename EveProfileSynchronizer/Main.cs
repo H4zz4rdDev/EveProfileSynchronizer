@@ -5,7 +5,9 @@ using System.Linq;
 using System.Windows.Forms;
 using EveProfileSynchronizer.Core;
 using EveProfileSynchronizer.Core.Exception;
+using EveProfileSynchronizer.Core.Handler;
 using EveProfileSynchronizer.Core.Model;
+using EveProfileSynchronizer.Core.Utils;
 
 namespace EveProfileSynchronizer
 {
