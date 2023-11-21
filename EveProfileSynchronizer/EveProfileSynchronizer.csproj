@@ -86,7 +86,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\AppConfiguration.cs" />
+    <Compile Include="Core\Configuration\AppConfiguration.cs" />
     <Compile Include="Core\BackupHandler.cs" />
     <Compile Include="Core\CacheHandler.cs" />
     <Compile Include="Core\EsiDataProvider.cs" />
@@ -97,7 +97,7 @@
     <Compile Include="Core\Model\EveCharacter.cs" />
     <Compile Include="Core\Model\EveEsiCharacterResult.cs" />
     <Compile Include="Core\Model\EveEsiResult.cs" />
-    <Compile Include="Core\AppUtils.cs" />
+    <Compile Include="Core\Utils\AppUtils.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,5 +146,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

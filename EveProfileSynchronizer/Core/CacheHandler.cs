@@ -6,7 +6,6 @@ using System.Net;
 using EveProfileSynchronizer.Core.Exception;
 using EveProfileSynchronizer.Core.Model;
 using Newtonsoft.Json;
-using File = System.IO.File;
 
 namespace EveProfileSynchronizer.Core
 {

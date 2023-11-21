@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using EveProfileSynchronizer.Core;
 using EveProfileSynchronizer.Core.Exception;
 using EveProfileSynchronizer.Core.Model;
-using Newtonsoft.Json;
 
 namespace EveProfileSynchronizer
 {
