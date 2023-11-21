@@ -13,7 +13,7 @@ namespace EveProfileSynchronizer
 {
     public partial class Main : Form
     {
-        private EveProfileHandler _eveProfileHandler;
+        private ProfileHandler _profileHandler;
 
         private CacheHandler _cacheHandler;
 
@@ -29,13 +29,13 @@ namespace EveProfileSynchronizer
 
             _cacheHandler = new CacheHandler();
             _backupHandler = new BackupHandler();
-            _eveProfileHandler = new EveProfileHandler();
+            _profileHandler = new ProfileHandler();
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
             _characterIds = new List<int>();
-            _characterIds = _eveProfileHandler.GetProfileCharacterIds();
+            _characterIds = _profileHandler.GetProfileCharacterIds();
 
             try
             {
@@ -180,7 +180,7 @@ namespace EveProfileSynchronizer
                 syncCharacters.Add(_eveCacheObject.EveCharacters.First(c => c.Name.Contains(checkedItem.ToString())));
             }
 
-            _eveProfileHandler.DoProfileSync(mainCharacter, syncCharacters);
+            _profileHandler.DoProfileSync(mainCharacter, syncCharacters);
 
             MessageBox.Show("Synchronization Done!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }

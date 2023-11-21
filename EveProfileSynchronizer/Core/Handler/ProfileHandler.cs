@@ -6,11 +6,11 @@ using EveProfileSynchronizer.Core.Model;
 
 namespace EveProfileSynchronizer.Core.Handler
 {
-    internal class EveProfileHandler
+    internal class ProfileHandler
     {
         private readonly List<string> _fileBlackList = new List<string>();
 
-        public EveProfileHandler()
+        public ProfileHandler()
         {
             _fileBlackList.Add("core_char_('char', None, 'dat').dat");
             _fileBlackList.Add("core_char__.da");
