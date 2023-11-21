@@ -164,9 +164,13 @@ namespace EveProfileSynchronizer
             if (isBackupNeededCheckBox.Checked)
             {
                 _backupHandler.CreateBackup(_eveCacheObject);
+
+                SetLastBackups();
+
+                lastBackupLabel.Text = DateTimeOffset.FromUnixTimeSeconds(_backupHandler.GetLastBackupTimestamp())
+                    .LocalDateTime.ToString("dd'/'MM'/'yyyy HH:mm:ss");
             }
 
-            // Todo Implement Sync Logic
             var mainCharacter = _eveCacheObject.EveCharacters.First(c => c.Name.Contains(mainCharacterDropDown.SelectedItem.ToString()));
 
             var syncCharacters = new List<EveCharacter>();
