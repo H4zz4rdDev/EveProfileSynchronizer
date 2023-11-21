@@ -87,10 +87,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\Configuration\AppConfiguration.cs" />
-    <Compile Include="Core\BackupHandler.cs" />
-    <Compile Include="Core\CacheHandler.cs" />
+    <Compile Include="Core\Handler\BackupHandler.cs" />
+    <Compile Include="Core\Handler\CacheHandler.cs" />
     <Compile Include="Core\EsiDataProvider.cs" />
-    <Compile Include="Core\EveProfileHandler.cs" />
+    <Compile Include="Core\Handler\EveProfileHandler.cs" />
     <Compile Include="Core\Exception\AppOptionFileNotFoundException.cs" />
     <Compile Include="Core\Exception\AppOptionMissingIdException.cs" />
     <Compile Include="Core\Model\EveCacheObject.cs" />
